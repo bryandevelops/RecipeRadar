@@ -1,11 +1,16 @@
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 export default function Header (props) {
   return (
     <header>
       <div className='header-elements'>
-        <img className='svg logo-svg' src="/recipe-radar-icon.svg" />
-        <h1 className='title'>recipe radar</h1>
+        <Link to='/'>
+          <img className='svg logo-svg' src="/recipe-radar-icon.svg" />
+        </Link>
+        <Link to='/'>
+          <h1 className='title'>recipe radar</h1>
+        </Link>
         <img className='svg heart-svg' src="/heart-icon.svg" />
       </div>
       <div className='header-divider'>
