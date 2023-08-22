@@ -1,15 +1,15 @@
 .search-bar-container {
   display: flex;
+  justify-content: center;
 }
 
 .meal-input {
   border: none;
   border-top-left-radius: 80px 80px;
   border-bottom-left-radius: 80px 80px;
-  border-top-right-radius: 80px 80px;
-  border-bottom-right-radius: 80px 80px;
+  
   padding: 15px;
-  width: 45vw;
+  width: 35vw;
   margin: 25px auto 50px auto;
   box-shadow: 0 0 10px #ffffff;
 }
@@ -18,4 +18,31 @@
   outline: none !important;
   border: 1px solid #00000094;
   box-shadow: 0 0 15px #719ECE;
+  border-right: none;
+  clip-path: inset(-20px -0.3px -20px -20px);
+}
+
+.meal-input:focus + .meal-btn {
+  outline: none !important;
+  border: 1px solid #00000094;
+  box-shadow: 0 0 15px #719ECE;
+  border-left: none;
+  color: black;
+  pointer-events: auto;
+  clip-path: inset(-20px -20px -20px 0.3px);
+}
+
+.meal-btn {
+  background-color: white;
+  border: none;
+  border-top-right-radius: 80px 80px;
+  border-bottom-right-radius: 80px 80px;
+  padding: 15px 15px 15px 13px;
+  box-shadow: 0 0 10px #ffffff;
+  color: white;
+  pointer-events: none;
+}
+
+.meal-btn:focus-within {
+  pointer-events: auto;
 }

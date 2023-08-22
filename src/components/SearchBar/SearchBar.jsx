@@ -5,17 +5,22 @@ import './SearchBar.css';
 export default function SearchBar ({ setMealData }) {
   const searchInput = useRef(null);
 
-  function handleClick() {
+  function handleClick(e) {
+    e.preventDefault();
     const searchInputValue = searchInput.current.value
     getMealsBySearch(setMealData, searchInputValue)
   }
 
   return (
     <section className='search-bar-container'>
-      <input type='text' placeholder='Search for a meal...' ref={searchInput} 
-        className='meal-input' onKeyDown={e => { if (e.key === 'Enter') handleClick() }}
-      />
-      {/* <button onClick={handleClick}>Search</button> */}
+      <div className='search-bar-elements'>
+        <input type='text' placeholder='Search for a meal...' ref={searchInput} 
+          className='meal-input' onKeyDown={e => { if (e.key === 'Enter') handleClick(e) }}
+        />
+        <button className='meal-btn' onMouseDown={(e) => handleClick(e)}>
+          <i className="fa-solid fa-magnifying-glass fa-xl"></i>
+        </button>
+      </div>
     </section>
   );
 }
