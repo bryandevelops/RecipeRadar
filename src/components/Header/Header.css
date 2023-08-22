@@ -1,3 +1,33 @@
 header {
-  background-color: lightblue;
+  background-color: white;
+}
+
+.header-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo-svg {
+  margin-left: 35px;
+  margin-top: 5px;
+  width: 75px
+}
+
+.title {
+  font-family: 'ADLaM Display', cursive;
+  text-align: center;
+  color: black;
+  font-size: 2.5em;
+}
+
+.heart-svg {
+  margin-right: 35px;
+  width: 45px;
+}
+
+.header-divider {
+  background-image: linear-gradient(90deg, #ed6ea0 0, #ec8c69);
+  overflow: hidden;
 }
