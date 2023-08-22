@@ -1,5 +1,5 @@
 import RecipeCard from '../RecipeCard/RecipeCard';
-import PhotoCarousel from '../Carousel/PhotoCarousel';
+import PhotoCarousel from '../PhotoCarousel/PhotoCarousel';
 import './RecipeCardList.css';
 
 export default function RecipeCardList ({ mealData }) {

@@ -1,0 +1,8 @@
+.carousel-control-next,
+.carousel-control-prev {
+  filter: invert(100%);
+}
+
+.carousel-img {
+  border-radius: 2.5%;
+}
