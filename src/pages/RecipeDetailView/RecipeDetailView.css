@@ -1,3 +1,12 @@
-.recipe-detail-view h1 {
-  background-color: lightcoral;
+.recipe-detail-view {
+  background-image: linear-gradient(90deg, #ed6ea0 0, #ec8c69);
+}
+
+.top-half {
+  display: flex;
+}
+
+.instructions {
+  white-space: pre-wrap;
+  margin: 0;
 }
