@@ -1,4 +1,31 @@
+.recipe-card {
+  border: solid 1px transparent;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0 5px #ffffff;
+  border-radius: 10px;
+  width: 240px;
+}
+
+.recipe-card:hover {
+  border: 1px solid #00000094;
+  box-shadow: 0 0 15px #719ECE;
+}
+
 .recipe-card img {
   width: 200px;
   height: 200px;
+  border-radius: 5px;
+}
+
+.recipe-card h1 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: black;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 600;
 }

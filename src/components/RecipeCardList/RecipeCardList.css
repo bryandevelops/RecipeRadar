@@ -1,8 +1,11 @@
 .recipe-cards-container {
-  /* background-color: purple; */
   padding-bottom: 50px;
 }
 
 .recipe-cards-list {
-  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
 }
+

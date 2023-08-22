@@ -4,10 +4,9 @@
 }
 
 .meal-input {
-  border: none;
+  border: solid 1px transparent;
   border-top-left-radius: 80px 80px;
   border-bottom-left-radius: 80px 80px;
-  
   padding: 15px;
   width: 35vw;
   margin: 25px auto 50px auto;
@@ -34,7 +33,7 @@
 
 .meal-btn {
   background-color: white;
-  border: none;
+  border: solid 1px transparent;
   border-top-right-radius: 80px 80px;
   border-bottom-right-radius: 80px 80px;
   padding: 15px 15px 15px 13px;
