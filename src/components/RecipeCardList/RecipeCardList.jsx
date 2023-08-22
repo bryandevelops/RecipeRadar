@@ -1,4 +1,5 @@
 import RecipeCard from '../RecipeCard/RecipeCard';
+import PhotoCarousel from '../Carousel/PhotoCarousel';
 import './RecipeCardList.css';
 
 export default function RecipeCardList ({ mealData }) {
@@ -12,15 +13,9 @@ export default function RecipeCardList ({ mealData }) {
     );
   }
 
-  function loading() {
-    return (
-      <h3>loading...</h3>
-    );
-  }
-
   return (
     <section className="recipe-cards-container">
-      {mealData ? mealDataLoaded() : loading()}
+      {mealData ? mealDataLoaded() : <PhotoCarousel />}
     </section>
   );
 }
