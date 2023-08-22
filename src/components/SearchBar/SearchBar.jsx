@@ -13,9 +13,9 @@ export default function SearchBar ({ setMealData }) {
   return (
     <section className='search-bar-container'>
       <input type='text' placeholder='Search for a meal...' ref={searchInput} 
-        onKeyDown={(e) => { if (e.key === 'Enter') handleClick() }}
+        className='meal-input' onKeyDown={e => { if (e.key === 'Enter') handleClick() }}
       />
-      <button onClick={handleClick}>Search</button>
+      {/* <button onClick={handleClick}>Search</button> */}
     </section>
   );
 }

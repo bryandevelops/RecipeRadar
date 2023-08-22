@@ -6,13 +6,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .logo-svg {
   margin-left: 35px;
   margin-top: 5px;
-  width: 75px
+  width: 70px
 }
 
 .title {
@@ -20,6 +20,7 @@ header {
   text-align: center;
   color: black;
   font-size: 2.5em;
+  margin-right: 15px;
 }
 
 .heart-svg {

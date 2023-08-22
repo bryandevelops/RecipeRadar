@@ -1,3 +1,8 @@
 .recipe-cards-container {
   /* background-color: purple; */
+  padding-bottom: 50px;
+}
+
+.recipe-cards-list {
+  margin: 0;
 }

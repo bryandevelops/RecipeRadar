@@ -1,3 +1,21 @@
 .search-bar-container {
-  background-color: lightgreen;
+  display: flex;
+}
+
+.meal-input {
+  border: none;
+  border-top-left-radius: 80px 80px;
+  border-bottom-left-radius: 80px 80px;
+  border-top-right-radius: 80px 80px;
+  border-bottom-right-radius: 80px 80px;
+  padding: 15px;
+  width: 45vw;
+  margin: 25px auto 50px auto;
+  box-shadow: 0 0 10px #ffffff;
+}
+
+.meal-input:focus {
+  outline: none !important;
+  border: 1px solid #00000094;
+  box-shadow: 0 0 15px #719ECE;
 }

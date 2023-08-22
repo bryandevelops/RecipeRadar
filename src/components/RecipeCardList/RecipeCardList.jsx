@@ -5,7 +5,7 @@ import './RecipeCardList.css';
 export default function RecipeCardList ({ mealData }) {
   function mealDataLoaded() {
     return (
-      <ul>
+      <ul className='recipe-cards-list'>
         {mealData.map((meal, i) => {
           return <RecipeCard key={i} {...meal}/>
         })}
