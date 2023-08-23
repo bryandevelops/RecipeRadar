@@ -1,12 +1,14 @@
 .recipe-detail-view {
   background-image: linear-gradient(90deg, #ed6ea0 0, #ec8c69);
+  padding: 15px;
 }
 
-.top-half {
-  display: flex;
+.recipe-detail-wrapper {
+  background-color: white;
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: 0 0 5px #ffffff;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-.instructions {
-  white-space: pre-wrap;
-  margin: 0;
-}
