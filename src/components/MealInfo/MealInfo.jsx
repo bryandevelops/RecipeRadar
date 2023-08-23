@@ -6,11 +6,9 @@ export default function MealInfo ({ strMeal, strMealThumb, strCategory, strArea,
 
   return (
     <section className='meal-info-component'>
-
       <div className='meal-img-container'>
-        <img src={strMealThumb} alt={strMeal} width={400}/>
+        <img src={strMealThumb} alt={strMeal} />
       </div>
-
       <div className='meal-info-container'>
         <h1>{strMeal}</h1>
         <h2><span>Category:</span> {strCategory}</h2>

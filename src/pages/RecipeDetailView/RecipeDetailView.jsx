@@ -30,8 +30,8 @@ export default function RecipeDetailView (props) {
           strArea={strArea}
           ingredients={ingredients} 
         />
-        <Video strMeal={strMeal} strYoutube={strYoutube} />
         <Instructions strInstructions={strInstructions} />
+        <Video strMeal={strMeal} strYoutube={strYoutube} />
       </div>
     </main>
   );

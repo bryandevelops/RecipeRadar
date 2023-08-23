@@ -4,6 +4,7 @@
 
 .meal-img-container img {
   border: 2px solid black;
+  width: 25vw;
 }
 
 .meal-info-container h1 {
@@ -39,6 +40,7 @@ span {
 .ingredients-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 .ingredient-item {
