@@ -39,7 +39,7 @@ export default function MealInfo (props) {
         <h1>{props.strMeal}</h1>
         <h2><span>Category:</span> <Link to={`/category/${props.strCategory}`} className='meal-info-link'>{props.strCategory}</Link></h2>
         <div className='meal-country-container'>
-          <h2><span>Country:</span> {props.strArea}</h2>
+          <h2><span>Country:</span> <Link to={`/area/${props.strArea}`} className='meal-info-link'>{props.strArea}</Link></h2>
           <img src={url} alt={props.strArea} />
         </div>
         <h3>Ingredients:</h3>

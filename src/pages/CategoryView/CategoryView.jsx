@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getMealsByCategory } from '../../utils/api';
-import './CategoryView.css';
 import CategoryRecipeCardList from '../../components/CategoryRecipeCardList/CategoryRecipeCardList';
+import './CategoryView.css';
 
 export default function CategoryView ({setMealData}) {
   const [catMealData, setCatMealData] = useState(null);

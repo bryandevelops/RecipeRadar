@@ -4,6 +4,7 @@ import Home from './pages/Home/Home';
 import RecipeDetailView from './pages/RecipeDetailView/RecipeDetailView';
 import Favorites from './pages/Favorites/Favorites';
 import CategoryView from './pages/CategoryView/CategoryView';
+import AreaView from './pages/AreaView/AreaView';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import './App.css';
@@ -24,6 +25,7 @@ export default function App() {
         <Route path='/:id' element={<RecipeDetailView favorites={favorites} setFavorites={setFavorites} />} />
         <Route path='/favorites' element={<Favorites favorites={favorites} />} />
         <Route path='/category/:category' element={<CategoryView />} />
+        <Route path='/area/:area' element={<AreaView />} />
       </Routes>
       <Footer />
     </div>
