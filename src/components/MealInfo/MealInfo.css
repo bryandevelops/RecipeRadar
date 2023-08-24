@@ -58,3 +58,13 @@ span {
   width: 40px;
   height: inherit;
 }
+
+.meal-info-link {
+  color: #4f4f4f;
+  text-decoration: underline;
+}
+
+.meal-info-link:hover {
+  color: #3b71ca;
+  text-decoration: underline;
+}

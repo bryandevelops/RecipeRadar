@@ -39,3 +39,23 @@ export async function getMealsBySearch(setState, value) {
     console.error(err)
   }
 }
+
+export async function getMealsByCategory(setState, category) {
+  try {
+    const url = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`
+    const resp = await fetch(url);
+    const data = await resp.json();
+
+    const newDataArray = await Promise.all(
+      data.meals.map(async (meal) => {
+        const resp = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${meal.idMeal}`);
+        const data = await resp.json();
+        return await data.meals[0];
+      })
+    )
+
+    setState(newDataArray)
+  } catch(err) {
+    console.error(err)
+  }
+}
