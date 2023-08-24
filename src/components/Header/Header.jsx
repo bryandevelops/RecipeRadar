@@ -11,7 +11,9 @@ export default function Header (props) {
         <Link to='/'>
           <h1 className='title'>recipe radar</h1>
         </Link>
-        <img className='svg heart-svg' src="/heart-icon.svg" />
+        <Link to='/favorites'>
+          <img className='svg heart-svg' src="/filled-heart.svg" />
+        </Link>
       </div>
       <div className='header-divider'>
         <svg

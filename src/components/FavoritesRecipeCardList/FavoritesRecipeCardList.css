@@ -1,0 +1,16 @@
+.favorites-recipe-cards-container {
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.favorites-recipe-cards-container h1 {
+  color: black;
+  font-family: 'ADLaM Display', cursive;
+  margin: 0;
+}
+
+.favorites-recipe-cards-container svg {
+  width: 360px;
+  height: auto;
+}

@@ -1,6 +1,5 @@
 import { MDBCarousel, MDBCarouselItem } from 'mdb-react-ui-kit';
-
-import './PhotoCarousel.css'
+import './PhotoCarousel.css';
 
 export default function PhotoCarousel (props) {
   return (
