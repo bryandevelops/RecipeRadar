@@ -1,0 +1,13 @@
+.categories {
+  background-image: linear-gradient(90deg, #ed6ea0 0, #ec8c69);
+}
+
+.category-cards-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  list-style: none;
+  place-items: center;
+  padding: 0;
+}

@@ -5,9 +5,17 @@ export default function Header (props) {
   return (
     <header>
       <div className='header-elements'>
-        <Link to='/'>
-          <img className='svg logo-svg' src="/recipe-radar-icon.svg" />
-        </Link>
+        <div>
+          <Link to='/'>
+            <img className='svg logo-svg' src="/search.svg" />
+          </Link>
+          <Link to='/category'>
+            <img className='svg logo-svg' src="/category.svg" />
+          </Link>
+          <Link to='/area'>
+            <img className='svg logo-svg' src="/area.svg" />
+          </Link>
+        </div>
         <Link to='/'>
           <h1 className='title'>recipe radar</h1>
         </Link>

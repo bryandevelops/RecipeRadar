@@ -79,3 +79,27 @@ export async function getMealsByArea(setState, area) {
     console.error(err)
   }
 }
+
+export async function getCategories(setState) {
+  try {
+    const url = `https://www.themealdb.com/api/json/v1/1/categories.php`;
+    const resp = await fetch(url);
+    const data = await resp.json();
+    setState(data.categories)
+  } catch(err) {
+    console.error(err)
+  }
+}
+
+export async function getAreas(setState) {
+  try {
+    const url = 'https://www.themealdb.com/api/json/v1/1/list.php?a=list'
+    const resp = await fetch(url);
+    const data = await resp.json();
+    const indexOfArea = await data.meals.findIndex(area => area.strArea === 'Unknown');
+    data.meals.splice(indexOfArea, 1)
+    setState(data.meals)
+  } catch(err) {
+    console.error(err)
+  }
+}
