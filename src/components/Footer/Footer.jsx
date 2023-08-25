@@ -1,6 +1,9 @@
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 export default function Footer (props) {
+  const alphabet = Array.from('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+  
   return (
     <footer>
       <div className='footer-divider'>
@@ -17,6 +20,18 @@ export default function Footer (props) {
             opacity=".5" />
           <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
         </svg>
+      </div>
+      <div>
+        <ul className='alphabet'>
+          {alphabet.map((ele, idx) => {
+            if (idx !== alphabet.length - 1) {
+              return <li key={idx}><Link to={`/alphabet/${ele}`}>{ele}</Link> &middot;</li> 
+            } else { 
+              return <li key={idx}><Link to={`/alphabet/${ele}`}>{ele}</Link></li>  
+            }
+            
+          })}
+        </ul>
       </div>
       <div className='footer-elements'>
         <p id="footer-info">&copy; 2023 Copyright | Bryan Santos</p>

@@ -7,6 +7,7 @@ import Categories from './pages/Categories/Categories';
 import CategoryView from './pages/CategoryView/CategoryView';
 import Areas from './pages/Areas/Areas';
 import AreaView from './pages/AreaView/AreaView';
+import Alphabet from './pages/Alphabet/Alphabet';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import './App.css';
@@ -31,6 +32,7 @@ export default function App() {
         <Route path='/area' element={<Areas />} />
         <Route path='/area/:area' element={<AreaView />} />
         <Route path='/random' element={<RecipeDetailView favorites={favorites} setFavorites={setFavorites} />} />
+        <Route path='/alphabet/:letter' element={<Alphabet />} />
       </Routes>
       <Footer />
     </div>

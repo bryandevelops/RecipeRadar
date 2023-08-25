@@ -31,3 +31,19 @@ footer {
   text-decoration-line: none;
   margin: 0 7px;
 }
+
+.alphabet {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.alphabet li {
+  margin-right: 5px
+}
+
+.alphabet a {
+  color: #4f4f4f;
+}

@@ -110,3 +110,10 @@ export async function getRandom(setState) {
   const data = await resp.json();
   setState(data.meals[0])
 }
+
+export async function getMealsByLetter(setState, letter) {
+  const url = `https://www.themealdb.com/api/json/v1/1/search.php?f=${letter}`
+  const resp = await fetch(url);
+  const data = await resp.json();
+  setState(data.meals)
+}
