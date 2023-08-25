@@ -103,3 +103,10 @@ export async function getAreas(setState) {
     console.error(err)
   }
 }
+
+export async function getRandom(setState) {
+  const url = 'https://www.themealdb.com/api/json/v1/1/random.php';
+  const resp = await fetch(url);
+  const data = await resp.json();
+  setState(data.meals[0])
+}

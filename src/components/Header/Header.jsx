@@ -1,7 +1,19 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { getRandom } from '../../utils/api';
 import './Header.css';
 
 export default function Header (props) {
+  const [random, setRandom] = useState(null);
+
+  useEffect(() => {
+    getRandom(setRandom)
+  }, [])
+
+  function handleClick() {
+    getRandom(setRandom)
+  }
+
   return (
     <header>
       <div className='header-elements'>
@@ -14,6 +26,9 @@ export default function Header (props) {
           </Link>
           <Link to='/area'>
             <img className='svg logo-svg' src="/area.svg" />
+          </Link>
+          <Link to='/random' state={{...random}} onClick={handleClick}>
+            <img className='svg logo-svg' src="/random.svg" />
           </Link>
         </div>
         <Link to='/'>

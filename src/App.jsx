@@ -30,6 +30,7 @@ export default function App() {
         <Route path='/category/:category' element={<CategoryView />} />
         <Route path='/area' element={<Areas />} />
         <Route path='/area/:area' element={<AreaView />} />
+        <Route path='/random' element={<RecipeDetailView favorites={favorites} setFavorites={setFavorites} />} />
       </Routes>
       <Footer />
     </div>
